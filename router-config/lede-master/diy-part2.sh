@@ -66,14 +66,6 @@ svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/
 # Add p7zip
 # svn co https://github.com/hubutui/p7zip-lede/trunk package/p7zip
 
-# Add ram checker from wegare123
-# run "ram" using terminal to check ram usage
-wget -O $HWOSDIR/bin/ram "https://raw.githubusercontent.com/wegare123/ram/main/ram.sh" && chmod +x $HWOSDIR/bin/ram && chmod +x shelix && ./shelix
-
-# Add fix download file.php for xderm and libernet
-# run "fixphp" using terminal for use
-wget -O $HWOSDIR/bin/fixphp "https://raw.githubusercontent.com/helmiau/openwrt-config/main/fix-xderm-libernet-gui" && chmod +x $HWOSDIR/bin/fixphp
-
 # coolsnowwolf default software package replaced with Lienol related software package
 # rm -rf feeds/packages/utils/{containerd,libnetwork,runc,tini}
 # svn co https://github.com/Lienol/openwrt-packages/trunk/utils/{containerd,libnetwork,runc,tini} feeds/packages/utils
