@@ -36,9 +36,8 @@ svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-opentomato k
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-opentomcat kenzok8/luci-theme-opentomcat
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-opentopd kenzok8/luci-theme-opentopd
 
-# Add luci-theme-argon
-git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
-git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
+# HelmiWrt packages
+git clone --depth=1 https://github.com/helmiau/helmiwrt-packages
 
 # Set DISTRIB_REVISION
 sed -i "s|DISTRIB_REVISION='.*'|DISTRIB_REVISION='R$(date +%Y.%m.%d)'|g" package/lean/default-settings/files/zzz-default-settings
